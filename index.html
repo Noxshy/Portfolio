@@ -1,10 +1,1042 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-    <title>Portfolio - Noé</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noé Hernandez - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <h1>Portfolio en cours</h1>
-    <p>Ce site sera complété prochainement.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#apropos" class="nav-link">À propos</a>
+                <a href="#cv" class="nav-link">Mon parcours</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#veille" class="nav-link">Veille</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero hero-with-bg">
+        <div class="hero-container">
+            <div class="hero-content hero-card">
+                <h1 class="hero-title">
+                    Bonjour, je suis Noé Hernandez
+                </h1>
+                <p class="hero-subtitle">
+                    Étudiant en BTS SIO - option SLAM, en formation dans le développement web et logiciel.
+                </p>
+            </div>
+            <div class="hero-background"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Je m'appelle Noé Hernandez, je suis actuellement en BTS Services Informatiques aux Organisations
+                        (SIO),
+                        option Solutions Logicielles et Applications Métiers (SLAM), au lycée de la CCI à Nîmes.
+                    </p>
+
+                    <p>
+                        J'ai eu un parcours assez classique : j'ai obtenu mon brevet avec mention bien,
+                        puis un baccalauréat général avec les spécialités mathématiques et cinéma-audiovisuel,
+                        que j'ai obtenu avec la mention assez bien.
+                    </p>
+
+                    <p>
+                        À la base, je m'intéressais surtout au montage vidéo, mais les formations dans ce domaine sont
+                        assez rares.
+                        Ayant déjà des membres de ma famille qui travaillent dans le développement, je me suis orienté
+                        vers le BTS SIO.
+                        J'ai aussi retrouvé dans le développement certains points communs avec le montage, comme le fait
+                        de partir d'une idée,
+                        de réfléchir à une solution, puis de construire progressivement un résultat concret.
+                    </p>
+
+                    <p>
+                        Pendant ces deux années de BTS, j'ai découvert différents aspects du développement :
+                        la création de sites web, le développement d'applications, les bases de données,
+                        les API et le travail sur des projets plus proches du monde professionnel.
+                    </p>
+
+                    <p>
+                        Aujourd'hui, mon objectif est de continuer en alternance afin de travailler sur de vrais
+                        projets,
+                        gagner en expérience et progresser dans un cadre professionnel.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BTS SIO option SLAM</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Développement web et applicatif</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-video"></i>
+                            <span>Intérêt pour le montage vidéo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Objectif : alternance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="about-photo">
+                        <img src="assets/Noe.png" alt="Photo de Noé Hernandez"
+                            style="width: 240px; height: 240px; object-fit: cover; border-radius: 50%; box-shadow: 0 2px 16px rgba(0,0,0,0.16);" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title">Mon CV</h2>
+
+            <!-- CV Section -->
+            <div class="cv-download" style="text-align: center; margin-bottom: 4rem;">
+                <h3 style="margin-bottom: 1rem; color: var(--text-secondary);">Consulter mon CV</h3>
+                <a class="btn btn-primary" href="assets/CV-Noe-Hernandez.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-pdf"></i>
+                    Ouvrir mon CV (PDF)
+                </a>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="education-section">
+                <h3 class="education-title"
+                    style="font-size: 2rem; margin-bottom: 3rem; text-align: center; color: var(--text-primary);">
+                    Parcours Scolaire</h3>
+
+                <div class="education-timeline">
+
+                    <!-- Brevet -->
+                    <div class="education-item">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <span class="education-period">2020 - 2021</span>
+                                <h4 class="education-name">Diplôme National du Brevet</h4>
+                            </div>
+                            <div class="education-content">
+                                <p class="education-school">Collège La Salle Saint Jean-Baptiste - Nîmes</p>
+                                <p class="education-mention">Mention Bien</p>
+
+                                <p class="education-note">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Première étape de mon parcours scolaire, avant mon orientation vers un baccalauréat
+                                    général.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Baccalauréat -->
+                    <div class="education-item">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <span class="education-period">2021 - 2024</span>
+                                <h4 class="education-name">Baccalauréat Général</h4>
+                            </div>
+                            <div class="education-content">
+                                <p class="education-school">Lycée privé Saint-Stanislas - Nîmes</p>
+                                <p class="education-mention">Mention Assez Bien</p>
+
+                                <div class="education-skills">
+                                    <h5>Spécialités :</h5>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Mathématiques</span>
+                                        <span class="skill-tag">Cinéma-Audiovisuel</span>
+                                    </div>
+                                </div>
+
+                                <p class="education-note">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Développement de ma logique grâce aux mathématiques et de ma créativité grâce au
+                                    cinéma-audiovisuel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BTS SIO SLAM -->
+                    <div class="education-item">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <span class="education-period">2024 - 2026</span>
+                                <h4 class="education-name">BTS SIO option SLAM (En cours de formation)</h4>
+                            </div>
+                            <div class="education-content">
+                                <p class="education-school">Lycée privé de la CCI - Nîmes</p>
+                                <p class="education-description">Formation en développement logiciel et solutions
+                                    applicatives.</p>
+
+                                <div class="education-skills">
+                                    <h5>Compétences acquises :</h5>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">PHP</span>
+                                        <span class="skill-tag">C#</span>
+                                        <span class="skill-tag">SQL</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">Gestion de projet</span>
+                                        <span class="skill-tag">Analyse des besoins clients</span>
+                                    </div>
+                                </div>
+
+                                <p class="education-note">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Découverte du développement, des bases de données et du travail sur différents
+                                    projets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="education-section">
+                <h3 class="education-title"
+                    style="font-size: 2rem; margin-bottom: 3rem; text-align: center; color: var(--text-primary);">
+                    Expériences professionnelles
+                </h3>
+
+                <div class="education-timeline">
+
+                    <div class="education-item">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <span class="education-period">2025</span>
+                                <h4 class="education-name">Stage 1 - Atoo Next</h4>
+                            </div>
+                            <div class="education-content">
+                                <p class="education-school">Atoo Next - Nîmes</p>
+                                <p class="education-description">
+                                    Développement de modules e-commerce pour générer automatiquement des données de
+                                    test.
+                                </p>
+
+                                <div class="education-skills">
+                                    <h5>Missions réalisées :</h5>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">PHP POO</span>
+                                        <span class="skill-tag">PrestaShop</span>
+                                        <span class="skill-tag">WooCommerce</span>
+                                        <span class="skill-tag">GitLab</span>
+                                    </div>
+                                </div>
+
+                                <p class="education-note">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Amélioration d’un module PrestaShop et création d’un module WooCommerce pour générer
+                                    des clients, produits et commandes de test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <span class="education-period">2026</span>
+                                <h4 class="education-name">Stage 2 - Atoo Next</h4>
+                            </div>
+                            <div class="education-content">
+                                <p class="education-school">Atoo Next - Nîmes</p>
+                                <p class="education-description">
+                                    Travail sur un système de connexion centralisée et des tests d’intégration de
+                                    paiement.
+                                </p>
+
+                                <div class="education-skills">
+                                    <h5>Missions réalisées :</h5>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">CodeIgniter</span>
+                                        <span class="skill-tag">SSO</span>
+                                        <span class="skill-tag">Tokens</span>
+                                        <span class="skill-tag">Stripe</span>
+                                    </div>
+                                </div>
+
+                                <p class="education-note">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Création d’un site de test pour gérer une connexion centralisée et expérimenter un
+                                    système de paiement avec Stripe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projets</h2>
+            <p class="section-subtitle">
+                Cette partie regroupe les projets réalisés pendant ma formation, séparés entre la première et la
+                deuxième année de BTS SIO.
+                Chaque carte présente un projet, ses objectifs principaux et les technologies utilisées.
+            </p>
+
+            <!-- Première année -->
+            <div class="projects-year">
+                <h3 class="projects-year-title">Première année</h3>
+                <div class="projects-grid">
+
+                    <!-- AP0 - Projet Portfolio -->
+                    <div class="project-card" data-project="ap0">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-folder-open"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('ap0')">Voir le
+                                    projet</button>
+
+                                <a href="https://github.com/Noxshy/Portfolio" target="_blank"
+                                    class="btn btn-small btn-outline">
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AP0 - Projet Portfolio</h3>
+                            <p>Portfolio personnel suivi sur les deux années de BTS. Il sert de CV numérique pour
+                                présenter mon parcours, mes compétences et mes projets.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">GitHub Copilot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AP1 - Site Activité -->
+                    <div class="project-card" data-project="ap1">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-table-tennis"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('ap1')">Voir le
+                                    projet</button>
+                                <a href="https://github.com/Noxshy/AP1-Site-Activite" target="_blank"
+                                    class="btn btn-small btn-outline">
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AP1 - Site Activité</h3>
+                            <p>Site statique réalisé à la main sur une activité sportive, avec plusieurs pages, un menu
+                                de navigation, un calculateur de tarifs et un formulaire validé.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Google Maps</span>
+                                <span class="tech-tag">Regex</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AP2 - Site Dynamique -->
+                    <div class="project-card" data-project="ap2">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('ap2')">Voir le
+                                    projet</button>
+                                <a href="https://github.com/Noxshy/AP2-Site-Dynamique" target="_blank"
+                                    class="btn btn-small btn-outline">
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AP2 - Site Dynamique</h3>
+                            <p>Suite du site de tennis, transformé en site dynamique avec PHP, base de données,
+                                connexion utilisateur, réservation et gestion administrateur.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">PDO</span>
+                                <span class="tech-tag">Sessions</span>
+                                <span class="tech-tag">CRUD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1er Stage - Atoo Next -->
+                    <div class="project-card" data-project="atoo1">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('atoo1')">Voir
+                                    le projet</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>1er Stage - Atoo Next</h3>
+                            <p>Stage chez Atoo Next à Nîmes, avec création et amélioration de modules PHP pour générer
+                                automatiquement des données de test e-commerce.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP POO</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">PrestaShop</span>
+                                <span class="tech-tag">WooCommerce</span>
+                                <span class="tech-tag">GitLab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Deuxième année -->
+            <div class="projects-year">
+                <h3 class="projects-year-title">Deuxième année</h3>
+                <div class="projects-grid">
+
+                    <!-- AP3 - CodeIgniter -->
+                    <div class="project-card" data-project="ap3">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('ap3')">Voir le
+                                    projet</button>
+                                <a href="https://github.com/Noxshy/AP3-ApplicationWeb-CodeIgniter" target="_blank"
+                                    class="btn btn-small btn-outline">
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AP3 - Application Web (CodeIgniter)</h3>
+                            <p>Suite de l’AP2 avec CodeIgniter, architecture MVC, gestion des rôles, sessions et
+                                programmation en base de données avec SQL Server.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">CodeIgniter</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">MVC</span>
+                                <span class="tech-tag">Triggers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AP4 - Application Mobile -->
+                    <div class="project-card" data-project="ap4">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('ap4')">Voir le
+                                    projet</button>
+                                <a href="https://github.com/Noxshy/AP4-Application-Mobile" target="_blank"
+                                    class="btn btn-small btn-outline">
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AP4 - Application Mobile</h3>
+                            <p>Version simplifiée de l’AP3 exposée via une API CodeIgniter, utilisée par une application
+                                mobile développée avec Android Studio.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">CodeIgniter</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet Guitare -->
+                    <div class="project-card" data-project="guitare">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-guitar"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn"
+                                    onclick="openProjectModal('guitare')">Voir le
+                                    projet</button>
+                                <a href="https://github.com/Noxshy/Projet-Guitare" target="_blank"
+                                    class="btn btn-small btn-outline">
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Projet Guitare</h3>
+                            <p>Application web Razor permettant à un client connecté de créer, modifier, supprimer et
+                                commander une configuration de guitare personnalisée.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">ASP.NET Razor</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Stage - Atoo Next -->
+                    <div class="project-card" data-project="atoo2">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small project-view-btn" onclick="openProjectModal('atoo2')">Voir
+                                    le
+                                    projet</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>2nd Stage - Atoo Next</h3>
+                            <p>Deuxième stage chez AtooNext autour d’un système de connexion centralisée SSO, avec tests
+                                d’authentification, tokens et intégration Stripe.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">CodeIgniter</span>
+                                <span class="tech-tag">SSO</span>
+                                <span class="tech-tag">Tokens</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <p class="section-subtitle">
+                Compétences développées pendant le BTS SIO à travers les projets et les stages.
+            </p>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3>Maîtrise logiciels</h3>
+                    <div class="skills-list">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Visual Studio</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Visual Studio Code</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL Server Management Studio</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PHPStorm</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git / GitLab</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Photoshop</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Premiere Pro / After Effects</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Laragon</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Maîtrise langages</h3>
+                    <div class="skills-list">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML / CSS</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL (MySQL / SQL Server)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Autres compétences</h3>
+                    <div class="skills-list">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">API / Webservices</span>
+                                <span class="skill-percentage">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Modules PrestaShop / WooCommerce</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Frameworks PHP (CodeIgniter / bases Laravel)</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Gestion de versions / travail collaboratif</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Rédaction de documentation technique</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Travail en équipe</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Veille Informatique Section -->
+    <section id="veille" class="tech-watch">
+        <div class="container">
+            <h2 class="section-title">Veille Informatique | L’évolution robotique dans le monde domestique et du travail
+            </h2>
+            <p class="section-subtitle">
+                Cette veille présente l’évolution de la robotique vers des machines plus autonomes,
+                capables de percevoir, analyser et agir dans des environnements réels.
+            </p>
+
+            <div class="tech-watch-grid">
+
+                <div class="watch-category">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Robotique domestique</h3>
+                    <div class="watch-items">
+                        <div class="watch-item">
+                            <span class="watch-title">Roborock Saros Z70</span>
+                            <span class="watch-desc">
+                                Aspirateur robot équipé d’un bras articulé capable de déplacer de petits objets.
+                                Source : Clubic, 5 janvier 2025.
+                            </span>
+                        </div>
+                        <div class="watch-item">
+                            <span class="watch-title">LG CLOiD</span>
+                            <span class="watch-desc">
+                                Robot domestique polyvalent capable d’aider dans plusieurs tâches du quotidien grâce à
+                                l’IA.
+                                Source : Clubic, 7 janvier 2026.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="watch-category">
+                    <div class="category-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Robotique dans le travail</h3>
+                    <div class="watch-items">
+                        <div class="watch-item">
+                            <span class="watch-title">Vulcan - Amazon</span>
+                            <span class="watch-desc">
+                                Robot logistique capable de manipuler des objets grâce à des capteurs et au sens du
+                                toucher.
+                                Source : About Amazon France, 7 mai 2025.
+                            </span>
+                        </div>
+                        <div class="watch-item">
+                            <span class="watch-title">Hoxo - Capgemini / Orano</span>
+                            <span class="watch-desc">
+                                Robot humanoïde utilisé dans le secteur nucléaire pour intervenir dans des
+                                environnements dangereux.
+                                Source : Capgemini, 4 novembre 2025.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="watch-category">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Ce que montre cette veille</h3>
+                    <div class="watch-items">
+                        <div class="watch-item">
+                            <span class="watch-title">Plus d’autonomie</span>
+                            <span class="watch-desc">
+                                Les robots ne se contentent plus d’exécuter une tâche simple :
+                                ils commencent à interagir avec leur environnement.
+                            </span>
+                        </div>
+                        <div class="watch-item">
+                            <span class="watch-title">Des usages plus variés</span>
+                            <span class="watch-desc">
+                                La robotique progresse autant dans la maison que dans les secteurs professionnels,
+                                notamment la logistique et les environnements à risque.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="watch-category">
+                    <div class="category-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Sources utilisées</h3>
+                    <div class="watch-items">
+                        <div class="watch-item">
+                            <span class="watch-title">Articles de presse</span>
+                            <span class="watch-desc">
+                                Clubic pour les robots domestiques Roborock Saros Z70 et LG CLOiD.
+                            </span>
+                        </div>
+                        <div class="watch-item">
+                            <span class="watch-title">Sources officielles</span>
+                            <span class="watch-desc">
+                                About Amazon France et Capgemini pour les robots Vulcan et Hoxo.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tech-resources">
+                <h3>Sources de veille</h3>
+                <div class="resources-grid">
+
+                    <a href="https://www.capgemini.com/fr-fr/actualites/communiques-de-presse/capgemini-et-orano-deploient-le-premier-robot-humanoide-intelligent-dans-le-secteur-du-nucleaire/"
+                        target="_blank" class="resource-item">
+                        <i class="fas fa-radiation"></i>
+                        <span>
+                            Robot Hoxo<br>
+                            <small>Capgemini - 4 novembre 2025</small>
+                        </span>
+                    </a>
+
+                    <a href="https://www.clubic.com/actualite-548387-roborock-devoile-le-premier-aspirateur-robot-qui-range-la-maison-avec-un-bras-articule.html"
+                        target="_blank" class="resource-item">
+                        <i class="fas fa-home"></i>
+                        <span>
+                            Roborock Saros Z70<br>
+                            <small>Clubic - 5 janvier 2025</small>
+                        </span>
+                    </a>
+
+                    <a href="https://www.aboutamazon.fr/actualites/innovations/lhistoire-de-vulcan-notre-premier-robot-dote-du-sens-du-toucher"
+                        target="_blank" class="resource-item">
+                        <i class="fas fa-industry"></i>
+                        <span>
+                            Vulcan - Amazon<br>
+                            <small>About Amazon - 7 mai 2025</small>
+                        </span>
+                    </a>
+
+                    <a href="https://www.clubic.com/actualite-593884-plie-linge-prepare-petit-dejeuner-fait-lessive-voici-robot-cloid-lg.html"
+                        target="_blank" class="resource-item">
+                        <i class="fas fa-home"></i>
+                        <span>
+                            LG CLOiD<br>
+                            <small>Clubic - 7 janvier 2026</small>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>Vous pouvez me contacter directement via ce formulaire ou à l'adresse suivante :</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>noe260806@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nîmes, France</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/noé-hernandez-531902330</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/noé-hernandez-531902330" target="_blank" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Noxshy" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:noe260806@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <input type="text" name="Nom" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="Sujet" placeholder="Sujet">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="Message" placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Envoyer le message
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Noé. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Titre du projet</h2>
+                <div id="modalTech" class="modal-tech-tags"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div id="modalIcon" class="modal-project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-section">
+                        <h3>Description</h3>
+                        <p id="modalDescription">Description du projet</p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Fonctionnalités principales</h3>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Technologies utilisées</h3>
+                        <div id="modalTechnologies" class="modal-tech-details"></div>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Défis techniques</h3>
+                        <p id="modalChallenges">Défis rencontrés et solutions apportées</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
